@@ -3,17 +3,21 @@
 	
 	"name": "ClearCache",
 	"description": "This extension clears Chrome's browsing data with one-click",
-	"version": "1.0",
+	"version": "2.0",
 	
 	"background": {
 		"scripts": ["clearCache.js"]
 	},
 	"browser_action": {
-		"default_icon": "clearCacheRed19x19.png",
+		"default_icon": "ClearCacheIcon19x19.png",
 	
 		"default_title": "Clear the Cache"
 	},
 	
+	"icons": { "16": "ClearCacheIcon16x16.png",
+           "48": "ClearCacheIcon48x48.png",
+          "128": "ClearCacheIcon128x128.png" },
+		  
 	"permissions": [
 		"activeTab",
 		"browsingData",
